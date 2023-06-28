@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between; /* To push elements as far as they can go from each other */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+/* Airbnb logo */
+.header__icon{
+    object-fit: contain;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+/* Center div --> Search Bar and Icon */
+.header__center{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: fit-content;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+}
+
+/* Search Bar */
+.header__center > input{
+    border: none;
+    padding: 10px;
+    outline-width: 0;  /* To avoid the blue box of the input tag, when typing in it */
+    width: 250px;
+}
+
+/* Right Div --> Become a Host, Language, DropDown, Avatar */
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right: 80px;
+}
