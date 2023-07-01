@@ -2,15 +2,24 @@ import './App.css';
 import Home from './Home.js';
 import Header from './Header.js';
 import Footer from './Footer';
+import SearchPage from './SearchPage';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
-     
-      <Header />    {/* Header Component will always show, part of App not Home */}
-      <Home />
-      <Footer /> {/* Footer Component will always show, part of App not Home */}
-          
+      <Router>
+
+        <Header />    
+        
+        <Routes>
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+
+        <Footer /> 
+       
+      </Router>
     </div>
   );
 }
