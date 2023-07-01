@@ -7,6 +7,8 @@
     top: 0;
     z-index: 100;
     width: 100%;
+    background-color: white;
+    height: 7vh;
 }
 
 /* Airbnb logo */
@@ -26,6 +28,7 @@
     padding: 10px;
     height: 30px;
     border: 1px solid lightgray;
+    padding-left: 20px;
     border-radius: 999px;
 }
 
@@ -34,7 +37,7 @@
     border: none;
     padding: 10px;
     outline-width: 0;  /* To avoid the blue box of the input tag, when typing in it */
-    width: 250px;
+    width: 300px;
 }
 
 /* Right Div --> Become a Host, Language, DropDown, Avatar */
@@ -43,5 +46,5 @@
     align-items: center;
     justify-content: space-between;
     width: 15vw;
-    margin-right: 80px;
+    margin-right: 40px;
 }
