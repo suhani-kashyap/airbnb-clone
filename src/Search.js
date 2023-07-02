@@ -5,9 +5,12 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { Button } from '@mui/material';
 import PeopleIcon from '@mui/icons-material/People';
+import { useNavigate } from "react-router-dom";
 
 
 function Search() {
+
+    const navigate = useNavigate();
 
     // States for start and end date
     const [startDate, setStartDate] = useState(new Date());
@@ -42,7 +45,7 @@ function Search() {
             type='number'
         />
 
-        <Button>
+        <Button onClick={() => navigate('/search')}>
             Search Airbnb
         </Button>
         

@@ -15,7 +15,7 @@
 .header__icon{
     object-fit: contain;
     height: 30px;
-    margin-left: 80px;
+    margin-left: 25px;
     margin-top: 5px;
 }
 
@@ -37,7 +37,7 @@
     border: none;
     padding: 10px;
     outline-width: 0;  /* To avoid the blue box of the input tag, when typing in it */
-    width: 300px;
+    width: 350px;
 }
 
 /* Right Div --> Become a Host, Language, DropDown, Avatar */
@@ -46,5 +46,5 @@
     align-items: center;
     justify-content: space-between;
     width: 15vw;
-    margin-right: 40px;
+    margin-right: 30px;
 }
